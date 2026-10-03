@@ -21,6 +21,14 @@ You can also copy a folder from `skills/` by hand.
 
 ## Catalog
 
+### Product
+
+Written by [@tornikegomareli](https://github.com/tornikegomareli) (MIT).
+
+| Skill | Use it to |
+|---|---|
+| [`product-thinking`](skills/product-thinking) | Review a project or spec as a product: problems with proof, fixes, missing features |
+
 ### Engineering workflow
 
 From [mattpocock/skills](https://github.com/mattpocock/skills) (MIT), commit `d81f3a1`. Run `setup-matt-pocock-skills` once per repo before the others.

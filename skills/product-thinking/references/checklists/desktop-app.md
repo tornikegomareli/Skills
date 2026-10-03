@@ -1,0 +1,10 @@
+# Desktop app checklist
+
+Each item names what to look for in the code or spec. A failed item becomes a finding. Link it to a principle in `references/principles/` when one fits.
+
+1. Permissions are explained before the system asks. Check: where accessibility, microphone, screen recording, or camera prompts fire. Each prompt should follow a screen that says why the app needs it and what happens if the user says no. Principle: `high-friction-onboarding`. Source: Apple HIG, Privacy (https://developer.apple.com/design/human-interface-guidelines/privacy).
+2. The first launch reaches the core action. Check: the path from first open to the first real result. Count the steps, the permission prompts, and any forced relaunch. Look for a hint that shows the main shortcut or gesture. Principle: `no-activation-metric`.
+3. Updates reach users without effort. Check: an update framework (for example Sparkle, https://sparkle-project.org/documentation/) or App Store distribution. Check that builds are signed and notarized, so the OS does not block them (https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution). Principle: `broken-end-to-end-experience`.
+4. Crashes and failures are visible to the team. Check: crash reporting, an opt-in diagnostics upload, or a "report a problem" action that attaches logs (https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs). If the app has no telemetry by design, check for another feedback channel. Principle: `no-user-contact`.
+5. The app survives OS and environment changes. Check: code paths that depend on OS versions, other apps, or system APIs that change each year. Check the issue tracker for reports after the latest OS release. Check for tests or a manual test list across the apps the product talks to. Principle: `broken-end-to-end-experience`.
+6. Failures tell the user what happened and what to do. Check: silent `catch` blocks, errors only written to logs, and states where the app does nothing with no message (NN/g heuristics 1 and 9, https://www.nngroup.com/articles/ten-usability-heuristics/). Principle: `poor-feedback-and-errors`.
