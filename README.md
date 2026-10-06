@@ -12,7 +12,7 @@ Each skill uses `SKILL.md` as its entrypoint. Supporting files sit in the skill'
 
 ### Vendored from Matt Pocock
 
-From [mattpocock/skills](https://github.com/mattpocock/skills) (MIT). Do not edit them by hand; copy them again from upstream.
+From [mattpocock/skills](https://github.com/mattpocock/skills) v1.3.1 (MIT). Do not edit them by hand; copy them again from upstream.
 
 - `setup-matt-pocock-skills/`: configure a repo's issue tracker, labels, and doc layout. Run it once before the others.
 - `grill-with-docs/`: stress-test a plan and write ADRs and a glossary as you go.
@@ -23,6 +23,7 @@ From [mattpocock/skills](https://github.com/mattpocock/skills) (MIT). Do not edi
 - `to-spec/`: turn the conversation into a spec on the issue tracker.
 - `to-tickets/`: split a plan or spec into tracer-bullet tickets.
 - `implement/`: implement work from a spec or tickets.
+- `implement-spec/`: implement a whole spec in one run, with subagents in parallel worktrees.
 - `tdd/`: build features or fix bugs test-first.
 - `diagnosing-bugs/`: diagnosis loop for hard bugs and regressions.
 - `research/`: research a question from primary sources into a Markdown file.
