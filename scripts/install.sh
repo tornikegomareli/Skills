@@ -10,7 +10,7 @@
 set -euo pipefail
 
 repo="$(cd "$(dirname "$0")/.." && pwd)"
-targets=${SKILL_TARGETS:-"$HOME/.claude/skills $HOME/.codex/skills $HOME/.pi/skills"}
+targets=${SKILL_TARGETS:-"$HOME/.claude/skills $HOME/.codex/skills $HOME/.pi/agent/skills"}
 
 skills() { ls "$repo"/*/SKILL.md | xargs -n1 dirname | xargs -n1 basename; }
 
