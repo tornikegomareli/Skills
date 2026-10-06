@@ -21,7 +21,7 @@ npx skills add tornikegomareli/Skills --skill product-thinking -g
 Or copy it into Claude Code, Codex, or pi without any tool:
 
 ```sh
-for dir in ~/.claude/skills ~/.codex/skills ~/.pi/skills; do
+for dir in ~/.claude/skills ~/.codex/skills ~/.pi/agent/skills; do
   mkdir -p "$dir"
   curl -sL https://github.com/tornikegomareli/Skills/archive/refs/heads/main.tar.gz \
     | tar -xz -C "$dir" --strip-components=1 Skills-main/product-thinking
